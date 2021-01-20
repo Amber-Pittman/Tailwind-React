@@ -1,0 +1,9 @@
+{
+    "editor.fontLigatures": true,
+    "cSpell.words": [
+        "compat",
+        "craco",
+        "tailwind",
+        "tailwindcss"
+    ]
+}
