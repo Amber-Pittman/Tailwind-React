@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <nav 
-            className='flex justify-between items-center h-16 bg-pink-700 text-white'
+            className='flex justify-between items-center h-16 bg-red text-gray-lightest'
             role='navigation'>
             <Link 
                 to='/' 
-                className='pl-8 font-sans text-2xl my-3.5'>
+                className='pl-8 font-sans text-2xl my-3.5 text-white'>
                     Om Nom
             </Link>
             <div className='px-4 cursor-pointer md:hidden'>
                 <svg 
-                    className='w-8 h-8 my-4'
+                    className='w-8 h-8 my-4 text-white'
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
                     viewBox="0 0 24 24" 
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </svg>               
             </div>
 
-            <div className='pr-8 my-5 md:block hidden'>
+            <div className='pr-8 my-5 md:block text-white hidden'>
                 <Link className='p-4' to='/'>Home</Link>
                 <Link className='p-4' to='/menu'>Menu</Link>
                 <Link className='p-4' to='/about'>About</Link>
