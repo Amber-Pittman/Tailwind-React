@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.product-card {
+    @apply flex flex-col justify-center items-center bg-white h-screen font-montserrat py-40;
+}
+
+.product-img {
+    @apply object-fill h-auto lg:w-96 md:w-72 sm:w-60 rounded mb-20 shadow-md;
+}
+
+.product-card-text {
+    @apply flex flex-col justify-center items-center;
+}
+
+.product-h2 {
+    @apply lg:text-3xl md:text-2xl sm:text-xl text-lg mb-2;
+}
+
+.product-p {
+    @apply mb-2 flex justify-center lg:mx-96 lg:px-96 md:mx-72 md:px-36;
+}
