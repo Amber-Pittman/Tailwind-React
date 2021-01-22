@@ -4,6 +4,14 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+      screens: {
+        xs: '420px',
+        sm: '500px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1440px',
+      },
       extend: {
         fontFamily: {
           'comfortaa': ['Comfortaa', 'cursive'],
@@ -11,6 +19,11 @@ module.exports = {
           'montez': ['Montez', 'cursive'],
           'montserrat': ['Montserrat', 'sans-serif'],
         },
+        fontSize: {
+          '10xl': '10rem',
+          '12xl': '12rem',
+          '14xl': '14rem',
+        }
       },
       colors: {
         transparent: 'transparent',
@@ -21,15 +34,11 @@ module.exports = {
         },
         red: {
           DEFAULT: '#cc0000',
-          dark: 'red-800',
+          dark: '#b30000',
         },
         aqua: {
           DEFAULT: '#00cccc',
           dark: '#00ebff',
-        },
-        gold: {
-          light: '#ffbf00',
-          DEFAULT: '#e6b319',
         },
       },
     variants: {
