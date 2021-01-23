@@ -29,14 +29,14 @@
 
 /* Hero Section */
 .hero {
-    @apply bg-white h-screen flex flex-col justify-center items-center;
+    @apply bg-white lg:mt-96 lg:mb-52 mt-32 mb-24 h-96 flex flex-col justify-center items-center;
 }
 .hero-title {
-    @apply lg:text-14xl md:text-12xl sm:text-10xl text-8xl text-red font-black -mt-36 mb-20 text-aqua font-montez justify-center text-center;
+    @apply lg:text-14xl md:text-12xl sm:text-10xl text-8xl text-red font-black sm:mt-2 -mt-36 mb-20 text-aqua font-montez justify-center text-center;
 }
 
 .buy-btn {
-    @apply lg:py-5 lg:px-9 md:py-4 md:px-8 sm:py-3 sm:px-5 sm:mt-12 py-4 px-6 -mt-6 bg-red rounded-full  hover:bg-red-dark text-white flex items-center font-montserrat lg:text-3xl md:text-2xl sm:text-xl text-base font-extrabold;
+    @apply lg:py-5 lg:px-9 md:py-4 md:px-8 sm:py-3 md:mb-48 sm:mt-12 sm:px-5  -mt-6 py-4 px-6 bg-red rounded-full hover:bg-red-dark text-white flex items-center font-montserrat lg:text-3xl md:text-2xl sm:text-xl text-base font-extrabold;
 }
 
 .svg {
@@ -45,11 +45,11 @@
 
 /* Products */
 .product-card {
-    @apply flex flex-col justify-center items-center bg-white h-screen font-montserrat pt-0;
+    @apply flex flex-col justify-center items-center bg-white h-screen font-montserrat mt-0 pt-0 md:-mb-4 mb-16;
 }
 
 .product-img {
-    @apply object-fill h-auto lg:w-96 md:w-72 sm:w-60 rounded mt-0 mb-12 shadow-md;
+    @apply object-fill h-auto lg:w-96 md:w-72 sm:w-60 rounded xs:-mt-0 mt-3 mb-12 shadow-md;
 }
 
 .product-card-text {
@@ -57,11 +57,15 @@
 }
 
 .product-h2 {
-    @apply lg:text-3xl md:text-2xl sm:text-xl text-lg mb-1.5;
+    @apply lg:text-3xl md:text-2xl sm:text-xl text-lg 2xl:mx-72 2xl:px-64 xl:mx-72 xl:px-48 lg:mx-72 md:mx-48 sm:mx-32 sm:px-0 mb-2 font-semibold;
 }
 
 .product-p {
-    @apply flex justify-center mb-2 lg:mx-96 lg:px-80 md:mx-80 sm:mx-60 mx-12;
+    @apply flex justify-center 2xl:mx-72 2xl:px-72 xl:mx-72 xl:px-48 lg:mx-1 lg:px-80 md:mx-56 sm:mx-32 mx-3 mb-3 px-0;
+}
+
+.price {
+    @apply text-red-dark text-lg font-medium xl:mb-24 lg:mb-20 sm:mb-6 mb-4;
 }
 
 /* Footer */
