@@ -9,7 +9,7 @@ const Hero = () => {
             </h1>
             <Link 
                 className='buy-btn'
-                to='/' >
+                to='/shop' >
                 Buy Now
                 <svg 
                     className='svg'

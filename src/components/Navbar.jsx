@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+// Destructure in Navbar to use the toggle onClick handler function found in App.js
+const Navbar = ({toggle}) => {
     return (
         <nav 
             className='navbar' role='navigation'>
@@ -10,7 +11,7 @@ const Navbar = () => {
                 className='home-link'>
                     Baby Belly
             </Link>
-            <div className='menu-btn'>
+            <div className='menu-btn' onClick={toggle}>
                 <svg 
                     className='menu-icon'
                     xmlns="http://www.w3.org/2000/svg" 
