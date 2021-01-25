@@ -68,4 +68,11 @@
     @apply text-red-dark text-lg font-medium xl:mb-24 lg:mb-20 sm:mb-6 mb-4;
 }
 
-/* Footer */
+/* Pages */
+.page {
+    @apply h-screen flex justify-center items-center bg-aqua
+}
+
+.page-title {
+    @apply 2xl:text-18xl xl:text-16xl lg:text-14xl md:text-12xl sm:text-10xl text-8xl text-white font-black sm:mt-2 -mt-36 mb-20 text-white font-montez justify-center text-center capitalize;
+}
